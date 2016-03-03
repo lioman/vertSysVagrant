@@ -134,7 +134,7 @@ apache:
             custom_fragment: ''
             proxy_pass:
               path: '/'
-              url: 'ajp://127.0.0.1:8009'
+              url: 'ajp://127.0.0.1:8009/'
             ssl: '0'
             ssl_cert: ''
             ssl_key: ''
