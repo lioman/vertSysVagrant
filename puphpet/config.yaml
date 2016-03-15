@@ -275,9 +275,11 @@ mariadb:
 mysql:
     install: '1'
     settings:
-        version: '5.5'
+        version: '5.6'
         root_password: '123'
-        override_options: {  }
+        override_options:
+            mysqld:
+                bind-address: '0.0.0.0'
     adminer: 0
     users:
         mysqlnu_u19hw8d6inhd:
@@ -285,10 +287,10 @@ mysql:
             password: '123'
     databases:
         mysqlnd_6kmuq5o0u4ec:
-            name: dbname
+            name: db
             sql: ''
     grants:
-        mysqlng_fpzfwdcffelh:
+        mysqlng_fpzf    wdcffelh:
             user: dbuser
             table: '*.*'
             privileges:
