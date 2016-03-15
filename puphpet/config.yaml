@@ -27,6 +27,9 @@ vagrantfile:
                                 vflmnfp_x22ym9yviukp:
                                     host: '5028'
                                     guest: '22'
+                                vsdajgds_jalskjd:
+                                    host: '3306'
+                                    guest: '3306'
                         hostname: kirand.locdev
                         memory: '512'
                         cpus: '1'
@@ -270,7 +273,7 @@ mariadb:
             privileges:
                 - ALL
 mysql:
-    install: '0'
+    install: '1'
     settings:
         version: '5.5'
         root_password: '123'
